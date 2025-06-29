@@ -27,11 +27,11 @@ class Perdedor(db.Model):
     nombre = db.Column(db.String(50))
 
 class Team_1_goals(db.Model):
-    __tablename__ = "Goles_equipo_1"  
+    __tablename__ = "Carreras_equipo_1"  
     id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     nombre = db.Column(db.Integer) 
 
 class Team_2_goals(db.Model):
-    __tablename__ = "Goles_equipo_2"  
+    __tablename__ = "Carreras_equipo_2"  
     id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     nombre = db.Column(db.Integer)  
