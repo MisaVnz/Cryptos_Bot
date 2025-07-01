@@ -8,3 +8,6 @@ instance/
 # cache python
 __pycache__/
 *.pyc
+
+#entorno de seguridad .env
+*.env

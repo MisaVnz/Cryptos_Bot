@@ -1,1 +1,0 @@
-#Aca debo crear una funcion que me busque por jerarquia, y me traiga los datos de cada partido individual pero aun no he podido :(
