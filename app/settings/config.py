@@ -9,3 +9,4 @@ class Config:
         self.API_URL = os.getenv("API_URL", "https://api.coingecko.com/api/v3/simple/price")
         self.CURRENCIES = os.getenv("CURRENCIES", "bitcoin,ethereum,solana,binancecoin,trondao").split(",")
         self.APP_NAME = os.getenv("APP_NAME", "Cryptos Bot")
+        self.AUTHOR_NAME = os.getenv("AUTHOR_NAME", "Misa")
