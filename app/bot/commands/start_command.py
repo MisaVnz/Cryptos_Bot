@@ -2,12 +2,13 @@ from telegram import Update
 from telegram.ext import ContextTypes
 
 from app.app_logger import get_logger
+from app.settings import Config
 
 logger = get_logger("[Cryptos Bot: Command Module]")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    welcome_text = """
-    ¡Hola! Soy *Cryptos*, un bot creado por *Misa* como proyecto para la materia Transmisión de Datos.
+    welcome_text = f"""
+    ¡Hola! Soy *{Config().APP_NAME}*, un bot creado por *{Config().AUTHOR_NAME}* como proyecto para la materia Transmisión de Datos.
 
     Puedo proporcionarte datos en tiempo real del precio de
     criptomonedas, pero porfa uno a la vez, toy chiquito :(.

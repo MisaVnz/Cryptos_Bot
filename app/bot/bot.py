@@ -9,6 +9,8 @@ logger = get_logger("[Cryptos Bot]")
 TOKEN = Config().TELEGRAM_BOT_KEY  
 
 async def post_init(application: Application):
+    """Función que se ejecuta después de que la aplicación se haya inicializado."""
+    logger.info("🔗 Configurando el webhook del bot de Telegram...")
     await application.bot.delete_webhook(drop_pending_updates=True)
 
 def main():
@@ -31,10 +33,10 @@ def main():
     application.add_handler(CommandHandler("SOL", sol))
     application.add_handler(CommandHandler("BNB", bnb))
     application.add_handler(CommandHandler("TRX", trx))
-
-    logger.info("Bot iniciado. Usa /start para ver las opciones")
+    
     try:
         application.run_polling()
+        logger.info("Bot iniciado. Usa /start para ver las opciones")
     except Exception as e:
         logger.error(f"Error al iniciar el bot: {e}")
         raise e
