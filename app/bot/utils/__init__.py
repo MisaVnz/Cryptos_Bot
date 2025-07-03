@@ -1,1 +1,1 @@
-from app.bot.utils.format_price import format_price
+from bot.utils.format_price import format_price
