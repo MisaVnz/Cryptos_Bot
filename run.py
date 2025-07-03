@@ -1,7 +1,7 @@
 from app import main
-from app.app_logger import get_logger
+from app.app_logger import LoggerConfig
 
-logger = get_logger("[Cryptos Bot]")
+LoggerConfig().setup_logging()
 
 
 if __name__ == "__main__":
