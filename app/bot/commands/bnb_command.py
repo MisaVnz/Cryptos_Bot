@@ -1,9 +1,9 @@
 from telegram import Update
 from telegram.ext import ContextTypes
 
-from core import obtener_precio_bnb
-from app_logger import get_logger
-from bot.utils import format_price
+from app.core import obtener_precio_bnb
+from app.app_logger import get_logger
+from app.bot.utils import format_price
 
 logger = get_logger("[Cryptos Bot: Command Module]")
 

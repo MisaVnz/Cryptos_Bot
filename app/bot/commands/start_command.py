@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ContextTypes
 
-from app_logger import get_logger
+from app.app_logger import get_logger
 
 logger = get_logger("[Cryptos Bot: Command Module]")
 

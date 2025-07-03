@@ -1,1 +1,1 @@
-from settings.config import Config
+from app.settings.config import Config

@@ -1,8 +1,8 @@
 from telegram.ext import Application, CommandHandler
 
-from settings import Config
-from app_logger import get_logger
-from bot.commands import start, eth, sol, bnb, trx, btc
+from app.settings import Config
+from app.app_logger import get_logger
+from app.bot.commands import start, eth, sol, bnb, trx, btc
 
 logger = get_logger("[Cryptos Bot]")
 
@@ -33,4 +33,8 @@ def main():
     application.add_handler(CommandHandler("TRX", trx))
 
     logger.info("Bot iniciado. Usa /start para ver las opciones")
-    application.run_polling()
+    try:
+        application.run_polling()
+    except Exception as e:
+        logger.error(f"Error al iniciar el bot: {e}")
+        raise e

@@ -1,8 +1,8 @@
-from core.price_bitcoin import obtener_precio_bitcoin
-from core.price_ethereum import obtener_precio_ethereum
-from core.price_solana import obtener_precio_solana
-from core.price_bnb import obtener_precio_bnb
-from core.price_tron import obtener_precio_tron
+from app.core.price_bitcoin import obtener_precio_bitcoin
+from app.core.price_ethereum import obtener_precio_ethereum
+from app.core.price_solana import obtener_precio_solana
+from app.core.price_bnb import obtener_precio_bnb
+from app.core.price_tron import obtener_precio_tron
 
 __all__ = [
     "obtener_precio_bitcoin",
