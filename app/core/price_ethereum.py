@@ -1,7 +1,8 @@
+from typing import Optional
 import requests
 import json
 
-def obtener_precio_ethereum():
+def obtener_precio_ethereum() -> Optional[float]:
     """Obtiene el precio actual de Ethereum en USD desde CoinGecko."""
     url = "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
     try:

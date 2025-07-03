@@ -1,7 +1,8 @@
+from typing import Optional
 import requests
 import json
 
-def obtener_precio_solana():
+def obtener_precio_solana() -> Optional[float]:
     """Obtiene el precio actual de Solana en USD desde CoinGecko."""
     url = "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
     try:

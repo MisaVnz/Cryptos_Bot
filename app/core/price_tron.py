@@ -1,7 +1,8 @@
+from typing import Optional
 import requests
 import json
 
-def obtener_precio_tron():
+def obtener_precio_tron() -> Optional[float]:
     """Obtiene el precio actual de TRON en USD desde CoinGecko."""
     url = "https://api.coingecko.com/api/v3/simple/price?ids=tron&vs_currencies=usd"
     try:

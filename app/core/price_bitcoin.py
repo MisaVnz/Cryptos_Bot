@@ -1,7 +1,8 @@
+from typing import Optional
 import requests
 import json
 
-def obtener_precio_bitcoin():
+def obtener_precio_bitcoin() -> Optional[float]:
     """Obtiene el precio actual de BNB en USD desde CoinGecko."""
     url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
     try:
