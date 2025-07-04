@@ -91,10 +91,10 @@ cryptos-bot/
 
 ## 📚 Documentación
 
-API Telegram Bot: Documentación Oficial
-CoinGecko API: Documentación Oficial
-python-telegram-bot: Documentación v20.x
-Logging en Python: Guía Oficial
+  - API Telegram Bot: [Documentación Oficial](https://core.telegram.org/bots/api)
+  - CoinGecko API: https://docs.coingecko.com/reference/introduction
+  - python-telegram-bot: https://docs.python-telegram-bot.org/en/v20.0a0/
+  - Logging en Python: https://docs.python.org/3/howto/logging.html
 
 ## Uso básico:
 1. Abre Telegram y busca tu bot
