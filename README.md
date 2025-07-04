@@ -1,10 +1,10 @@
 # Crytos_Bot 🤖
 
-https://img.shields.io/badge/Python-3.11%252B-blue?logo=python&logoColor=white
-https://img.shields.io/badge/Telegram-Bot-26A5E4?logo=telegram
-https://img.shields.io/badge/CoinGecko-API-yellow
-https://img.shields.io/badge/License-MIT-green.svg
-https://img.shields.io/badge/code%2520style-black-000000.svg
+![Python](https://img.shields.io/badge/Python-3.11%252B-blue?logo=python&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?logo=telegram)
+![CoinGecko](https://img.shields.io/badge/CoinGecko-API-yellow)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Code Style](https://img.shields.io/badge/code%2520style-black-000000.svg)
 
 > ⚠️  Importante: Nunca compartas tu token de Telegram. Mantén el archivo .env seguro.
 
@@ -42,9 +42,9 @@ Bot profesional para consultar precios de criptomonedas en tiempo real mediante 
 
 ## ⚙️ Instalacion
 
-## 🔑 Configuración del Token de Telegram
+### 🔑 Configuración del Token de Telegram
 
-### 1. Obtener tu Token de BotFather
+#### 1. Obtener tu Token de BotFather
 1. Busca **@BotFather** en Telegram
 2. Ejecuta el comando `/newbot`
 3. Sigue las instrucciones paso a paso:
@@ -67,14 +67,14 @@ TELEGRAM_BOT_KEY="pega_aquí_tu_token"
 ## 🏗️ Arquitectura del Proyecto
 
 cryptos-bot/
-├── .env                    # Configuración sensible
-├── run.py                  # Punto de entrada
+├── .env # Configuración sensible
+├── run.py # Punto de entrada
 ├── app/
-│   ├── bot/                # Lógica de comandos
-│   ├── core/               # Conexión con APIs
-│   ├── settings/           # Configuración
-│   └── app_logger/         # Sistema de logging
-└── logs/                   # Registros de actividad
+│ ├── bot/ # Lógica de comandos
+│ ├── core/ # Conexión con APIs
+│ ├── settings/ # Configuración
+│ └── app_logger/ # Sistema de logging
+└── logs/ # Registros de actividad
 
 ## 📋 Comandos Disponibles
 
