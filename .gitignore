@@ -11,3 +11,7 @@ __pycache__/
 
 #entorno de seguridad .env
 *.env
+
+# logs
+logs/
+*.log
