@@ -66,15 +66,17 @@ TELEGRAM_BOT_KEY="pega_aquí_tu_token"
 
 ## 🏗️ Arquitectura del Proyecto
 
+```text
 cryptos-bot/
-├── .env # Configuración sensible
-├── run.py # Punto de entrada
+├── .env                    # Configuración sensible
+├── run.py                  # Punto de entrada
 ├── app/
-│ ├── bot/ # Lógica de comandos
-│ ├── core/ # Conexión con APIs
-│ ├── settings/ # Configuración
-│ └── app_logger/ # Sistema de logging
-└── logs/ # Registros de actividad
+│   ├── bot/                # Lógica de comandos
+│   ├── core/               # Conexión con APIs
+│   ├── settings/           # Configuración
+│   └── app_logger/         # Sistema de logging
+└── logs/                   # Registros de actividad
+```
 
 ## 📋 Comandos Disponibles
 
