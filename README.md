@@ -91,9 +91,12 @@ cryptos-bot/
 
 ## 📚 Documentación
 
-La aplicación consume datos de la [API Pública de CoinGecko](https://www.coingecko.com/en/api/documentation) para obtener los precios de las criptomonedas en tiempo real.
+API Telegram Bot: Documentación Oficial
+CoinGecko API: Documentación Oficial
+python-telegram-bot: Documentación v20.x
+Logging en Python: Guía Oficial
 
-### Uso básico:
+## Uso básico:
 1. Abre Telegram y busca tu bot
 2. Escribe cualquiera de los comandos anteriores
 3. Recibe la información en formato claro con:
