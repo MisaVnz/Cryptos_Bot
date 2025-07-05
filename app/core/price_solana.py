@@ -2,6 +2,11 @@ from typing import Optional
 import requests
 import json
 
+from app.app_logger import get_logger
+from app.settings import Config
+
+logger = get_logger(f"[{Config().APP_NAME}: Core Module]")
+
 def obtener_precio_solana() -> Optional[float]:
     """Obtiene el precio actual de Solana en USD desde CoinGecko."""
     url = "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
@@ -12,7 +17,7 @@ def obtener_precio_solana() -> Optional[float]:
         precio_sol = data['solana']['usd']
         return precio_sol
     except requests.exceptions.RequestException as e:
-        print(f"Error al obtener el precio: {e}")
+        logger.error(f"Error al obtener el precio: {e}")
         return None
 
 if __name__ == "__main__":
