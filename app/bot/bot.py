@@ -4,7 +4,7 @@ from app.settings import Config
 from app.app_logger import get_logger
 from app.bot.commands import start, eth, sol, bnb, trx, btc
 
-logger = get_logger("[Cryptos Bot]")
+logger = get_logger(f"[{Config().APP_NAME}: Bot Module]")
 
 TOKEN = Config().TELEGRAM_BOT_KEY  
 
@@ -36,7 +36,7 @@ def main():
     
     try:
         application.run_polling()
-        logger.info("Bot iniciado. Usa /start para ver las opciones")
+        logger.info("Bot iniciado. Escuchando comandos...")
     except Exception as e:
         logger.error(f"Error al iniciar el bot: {e}")
         raise e
